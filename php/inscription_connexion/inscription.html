@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Recipe Master</title>
+    <link rel="stylesheet" href="../assets_php/css/php_index_inscription.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <script src="../../assets/js/app.js"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="overlay">
+      <div class="spinnerContainer">
+        <div class="spinner"></div>
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">collaborators</span>
+            <span class="word">images</span>
+            <span class="word">recipes</span>
+            <span class="word">ingredients</span>
+            <span class="word">collaborators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /loader -->
+    <a class="back_link" href="../../index.html"><img src="../../assets/img/back_icon.png"></a>
+    <section class="register">
+        <div class="top">
+            <h1>Join Our Cooking Family</h1>
+        </div>
+        <div class="center">
+            <h2>Registration</h2>
+            <form action="../action_php/register_action.php" method="post" class="registration_form" id="registration_form">
+                <div class="main_container">
+                    <div class="label_and_input">
+                        <label for="username">Username :</label>
+                        <input id="username" name="username" type="text" placeholder="Username" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="user_mail">Email :</label>
+                        <input id="user_mail" name="user_mail" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="user_mdp">Password :</label>
+                        <input id="user_mdp" name="user_mdp" type="password" placeholder="Create a password" required>
+                    </div>
+                </div>
+                <button type="submit" class="user_registration_submit" name="user_registration_submit" id="user_registration_submit">Register me !</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

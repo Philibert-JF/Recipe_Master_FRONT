@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets_php/css/add_colab.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <script src="../../assets/js/app.js"></script>
+    <title>Recipe Master Dashboard</title>
+    <script src="https://kit.fontawesome.com/5d2920a66b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="overlay">
+      <div class="spinnerContainer">
+        <div class="spinner"></div>
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">collaborators</span>
+            <span class="word">images</span>
+            <span class="word">recipes</span>
+            <span class="word">ingredients</span>
+            <span class="word">collaborators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /loader -->
+    <section class="main">
+        <aside class="sidebar">
+            <header><h2>Recipe Master</h2></header>
+            <section>
+                <ol>
+                    <li><a href="recipe_list.html"><i class="fa-solid fa-list-ul"></i>&nbsp Recipe list</a></li>
+                    <li><a href="add_recipe.html"><i class="fa-sharp fa-solid fa-circle-plus"></i>&nbsp Add recipe</a></li>
+                    <li><a href="add_colaborator.html"><i class="fa-solid fa-person-circle-plus"></i>&nbsp Add collaborator</a></li>
+                    <!-- <li><a href="share_recipe.html"><i class="fa-solid fa-share-from-square"></i>&nbsp Share recipes</a></li> -->
+                </ol>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp Informations</a></li>
+                    <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>&nbsp Logout</a></li>
+                </ul>
+            </footer>
+        </aside>
+        
+        <section class="add_colaborator_main_section">
+            <header>
+                <h1>Add collaborators</h1>
+                <p>Add people as collaborator to share them recipes</p>
+            </header>
+            <section class="add_colaborator_form_section">
+                <form action="add_colaborator.html" method="post" class="form_tag">
+                    <div class="row">
+                        <div class="label_and_input">
+                            <label for="L_Name">Colaborator last name</label>
+                            <input type="text" name="L_Name" id="L_Name" placeholder="Last name">
+                        </div>
+                        <div class="label_and_input">
+                            <label for="F_Name">Colaborator first name</label>
+                            <input type="text" name="F_Name" id="F_Name" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="label_and_input">
+                            <label for="col_email">Colaborator email</label>
+                            <input type="email" name="col_email" id="col_email" placeholder="Email">
+                        </div>
+                        <div class="label_and_input">
+                            <label for="col_password">Colaborator password</label>
+                            <input type="password" name="col_password" id="col_password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="label_and_radio">
+                        <div>    
+                            <label for="read">Read access</label>
+                            <input type="radio" name="col_access" id="read">
+                        </div>
+                        <div>  
+                            <label for="read_and_write">Read and write</label>
+                            <input type="radio" name="col_access" id="read_and_write">
+                        </div>
+                    </div>
+                    <div class="btn_submit">
+                        <button type="submit" class="add_recipe_submit" name="add_recipe_submit" id="add_recipe_submit">Add recipe</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

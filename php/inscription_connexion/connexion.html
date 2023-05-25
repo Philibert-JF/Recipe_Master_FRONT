@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Recipe Master</title>
+    <link rel="stylesheet" href="../assets_php/css/php_index_login.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <script src="../../assets/js/app.js"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="overlay">
+      <div class="spinnerContainer">
+        <div class="spinner"></div>
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">collaborators</span>
+            <span class="word">images</span>
+            <span class="word">recipes</span>
+            <span class="word">ingredients</span>
+            <span class="word">collaborators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /loader -->
+    <a class="back_link" href="../../index.html"><img src="../../assets/img/back_icon.png"></a>
+    <section class="login">
+        <div class="top">
+            <h1>Ho ! We are happy to see you again !</h1>
+        </div>
+        <div class="center">
+            <h2>Log in</h2>
+            <form action="../action_php/login_action.php" method="post" class="login_form" id="login_form">
+                <div class="main_container">
+                    <div class="label_and_input">
+                        <label for="user_mail">Email :</label>
+                        <input id="user_mail" name="user_mail" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="label_and_input">
+                        <label for="user_mdp">Password :</label>
+                        <input id="user_mdp" name="user_mdp" type="password" placeholder="Create a password" required>
+                    </div>
+                </div>
+                <button type="submit" class="user_login_submit" name="user_login_submit" id="user_login_submit"><a href="../members/recipe_list.html" style="color: white; text-decoration: none;">Login</a></button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

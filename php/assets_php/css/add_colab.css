@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+:root {
+    --font-family: "Raleway", sans-serif;
+    --weight-navbar: 800;
+    --weight-other: 550;
+    --font-color: #323232;
+    --cta-color: #EF4444;;
+}
+
+* {
+    font-family: var(--font-family);
+    list-style: none;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #f2f5f7;
+    height: 100%;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    width: 14vw;
+    height: 96vh;
+    background: #fff;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+.sidebar header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -1vw;
+    margin-bottom: 3vw;
+}
+.sidebar header h2 {
+    margin-left: -3vh;
+}
+.sidebar section {
+    height: 75%;
+    flex: 1;
+}
+.sidebar section ol {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw;
+}
+
+.sidebar section ol li {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-left: -1vh;
+}
+.sidebar section ol li a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+.sidebar section ol li:hover {
+    background-color: #EF4444;
+}
+.sidebar section ol li:hover a {
+    color: #fff;
+}
+.sidebar footer {
+    margin-top: 1vw;
+}
+.sidebar footer ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw;
+}
+
+.sidebar footer ul li {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-left: -1vh;
+}
+.sidebar footer ul li a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+.sidebar footer ul li:hover {
+    background-color: #EF4444;
+}
+.sidebar footer ul li:hover a {
+    color: #fff;
+}
+
+.add_colaborator_main_section {
+    height: 29vw;
+    width: 60vw;
+    border-radius: 1vw;
+    padding: 4vw 1vw 1vw 1vw;
+    background-color: #FFFFFF;
+    margin-top: 4vw;
+    margin-right: auto;
+    margin-left: 26vw;
+    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.3);
+}
+
+.add_colaborator_main_section header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+.add_colaborator_main_section header h1 {
+    font-size: 2vw;
+    margin: 0;
+}
+.add_colaborator_main_section header p {
+    margin-top: -12px;
+}
+.label_and_radio {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.add_colaborator_main_section .label_and_input {
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+}
+.label_and_input input[type=text] {
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.3);
+    height: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+.label_and_input input[type=email] {
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.3);
+    height: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+.label_and_input input[type=password] {
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 2px 12px rgba(20, 20, 43, 0.3);
+    height: 1.5vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+}
+.btn_submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.btn_submit button {
+    cursor: pointer;
+    margin-top: 6vw;
+    padding: 0.5vw 1vw;
+    border: none;
+    background-color: #EF4444;
+    border-radius: 0.2vw;
+    color: white;
+    font-weight: var(--weight-other);
+    font-size: 0.8vw;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vw;
+}

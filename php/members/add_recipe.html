@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets_php/css/add_recipe.css">
+    <link rel="stylesheet" href="../../assets/css/loader.css">
+    <script src="../../assets/js/app.js"></script>
+    <title>Recipe Master Dashboard</title>
+    <script src="https://kit.fontawesome.com/5d2920a66b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- loader -->
+    <div class="overlay">
+      <div class="spinnerContainer">
+        <div class="spinner"></div>
+        <div class="loader">
+          <p>loading</p>
+          <div class="words">
+            <span class="word">collaborators</span>
+            <span class="word">images</span>
+            <span class="word">recipes</span>
+            <span class="word">ingredients</span>
+            <span class="word">collaborators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /loader -->
+    <section class="main">
+        <aside class="sidebar">
+            <header><h2>Recipe Master</h2></header>
+            <section>
+                <ol>
+                    <li><a href="recipe_list.html"><i class="fa-solid fa-list-ul"></i>&nbsp Recipe list</a></li>
+                    <li><a href="add_recipe.html"><i class="fa-sharp fa-solid fa-circle-plus"></i>&nbsp Add recipe</a></li>
+                    <li><a href="add_colaborator.html"><i class="fa-solid fa-person-circle-plus"></i>&nbsp Add collaborator</a></li>
+                    <!-- <li><a href="share_recipe.html"><i class="fa-solid fa-share-from-square"></i>&nbsp Share recipes</a></li> -->
+                </ol>
+            </section>
+            <footer>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp Informations</a></li>
+                    <li><a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>&nbsp Logout</a></li>
+                </ul>
+            </footer>
+        </aside>
+        <section class="add_recipe">
+            <header>
+                <h1>Add Recipe</h1>
+            </header>
+            <form action="add_recipe.html" method="post">
+                <div class="label_and_input_top">
+                    <div class="content_l_a_i">
+                        <label for="name">Recipe name</label>
+                        <input type="text" name="name" id="name" placeholder="Recipe name" required>
+                    </div>
+                    <div class="content_l_a_i">
+                        <label for="time">Time</label>
+                        <input type="number" name="time" id="time" placeholder="Time" required>
+                    </div>
+                    <div class="content_l_a_i">
+                        <label for="people">People</label>
+                        <input name="people" id="people" cols="30" rows="10" placeholder="People" required></input>
+                    </div>
+                </div>
+                <div class="label_and_input_center">
+                    <div class="label_text">
+                        <label for="Steps by steps">Steps by steps</label>
+                        <textarea name="Steps by steps" id="Steps by steps" cols="30" rows="10" placeholder="Steps by steps (back to other line for each step)" required></textarea>
+                    </div>
+                    <div class="label_text">
+                        <label for="ingredients">Ingredients</label>
+                        <textarea name="ingredients" id="ingredients" cols="30" rows="10" placeholder="Ingredients (back to other line for each new engredients)" required></textarea>
+                    </div>
+                </div>
+                <div class="btn_submit">
+                    <button type="submit" class="add_recipe_submit" name="add_recipe_submit" id="add_recipe_submit">Add recipe</button>
+                </div>
+            </form>
+        </section>
+    </section>
+</body>
+</html>
